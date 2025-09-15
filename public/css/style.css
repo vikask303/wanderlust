@@ -25,6 +25,12 @@ body {
   opacity: 90%;
 }
 
+.card{
+  display: flex !important;
+  flex-wrap: wrap !important;
+  border: none !important;
+}
+
 .card-img-top{
   border-radius: 1rem !important;
   width: 100% !important;
