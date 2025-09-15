@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+.navbar {
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.nav-icon{
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.listing-card {
+  border: none !important;
+  margin-bottom: 3rem;
+  width: 260px !important;
+}
+
+.listing-card :hover{
+  opacity: 90%;
+}
+
+.card-img-top{
+  border-radius: 1rem !important;
+  width: 100% !important;
+  object-fit: cover !important;
+}
+
+.card-body{
+  padding: 0 !important;
+}
+
+
+footer {
+  background-color: #f1f1f1;
+  color: #333;
+  text-align: center;
+  padding: 8px;
+  font-size: 14px;
+  border-top: 1px solid #ccc;
+  margin-top: auto; /* Push footer to bottom */
+}
+footer a {
+  color: #333;
+  text-decoration: none;
+  margin: 0 8px;
+  font-size: 13px;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+#show{
+  margin-bottom: 40px;
+}
+
+.nav-btn{
+  border: 1px solid white;
+  padding: 0 10px 0 10px;
+}
+
+.nav-btn:hover {
+  background-color: lightgrey !important;
+  border-radius: 20px;
+}
+
+#filters{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  
+}
+.filter{
+    margin: 10px;
+    cursor: pointer;
+    opacity: 0.5;
+    padding: 10px;
+    font-size: medium;
+   
+}
+.filter:hover {
+  opacity: 1;
+}
+
+.btn-search{
+  border-radius: 20px;
+}
+.search-box{
+  border-radius: 20px;
+}

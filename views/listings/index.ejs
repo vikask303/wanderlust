@@ -1,0 +1,47 @@
+<% layout("layouts/boilerplate") -%>
+<body>
+
+  <div id="filters">
+    <div class="filter">
+      <i class="fa-solid fa-fire"></i>
+      <p>Trending</p>
+    </div>
+    <div class="filter">
+      <i class="fa-solid fa-bed"></i>
+      <p>Rooms</p>
+    </div>
+    <div class="filter">
+      <i class="fa-solid fa-bell-concierge"></i>
+      <p>Resorts</p>
+    </div>
+    <div class="filter">
+      <i class="fa-solid fa-star"></i>
+      <p>Luxury Hotels</p>
+    </div>
+    <div class="filter">
+      <i class="fa-solid fa-hotel"></i>
+      <p>Spa Hotels</p>
+    </div>
+    <div class="filter">
+      <i class="fa-solid fa-umbrella-beach"></i>
+      <p>Sea View</p>
+    </div>
+  </div>
+
+
+    <div class="row row-cols-lg-5 row-cols-md-4 row-cols-sm-3 row-cols-xm-2 mt-4">
+      <% for(listing of allListings){ %>
+      <div class="listing-card">
+        <a href="/listings/<%= listing._id %>"><img src="<%= listing.image.url  %>" class="card-img-top" alt="..." style="height: 15rem;" /></a>
+          <div class="card-body">
+            <b><p class="card-title"><%= listing.title %></p></b>
+            <!-- <i><p class="card-text"><%= listing.description %></p></i> -->
+            <p>₹ <%= listing.price.toLocaleString("en-IN") %>/night</p>
+          </div>
+      </div>
+        <br />
+      <% } %>
+    </div>
+
+
+</body>
