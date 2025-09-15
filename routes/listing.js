@@ -44,6 +44,7 @@ router.route("/")
 router.route("/:id")
 //  Show Route
 .get(wrapAsync(listingController.showListing))
+
 // Update Route
 .put(isLoggedIn, upload.single("listing[image]"), validateListing, wrapAsync(listingController.updateListing))
 // Delete Route
