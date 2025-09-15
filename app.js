@@ -73,6 +73,12 @@ app.use((req,res,next)=>{
 })
 
 
+//Root Route
+app.get("/",(req,res)=>{
+    res.redirect("/listings")
+})
+
+
 // Routes 
 app.use("/", userRouter)
 app.use("/listings",listingRouter)
